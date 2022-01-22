@@ -30,6 +30,8 @@ export class AppComponent {
         },
     };
 
+    isActivated : boolean = true;
+
     changeLanguage(idioma: string) {
         this.idioma = idioma;
     };

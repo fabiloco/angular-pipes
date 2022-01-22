@@ -10,11 +10,13 @@ registerLocaleData(localFr);
 
 import { AppComponent } from './app.component';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DomseguroPipe
+    DomseguroPipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule

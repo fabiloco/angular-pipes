@@ -138,6 +138,15 @@
                     </td>
                     <td>{{ fecha | date:'MMMM - dd':'':idioma }}</td>
                 </tr>
+
+                <tr>
+                    <td>{{ nombre }}</td>
+                    <td>
+                        password : {{ isActivated }}
+                        <button class="btn btn-primary" (click)="isActivated = !isActivated">Activar/desactivar</button>
+                    </td>
+                    <td>{{ nombre | password : isActivated }}</td>
+                </tr>
             </tbody>
         </table>
 

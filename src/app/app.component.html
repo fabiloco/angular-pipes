@@ -147,13 +147,41 @@
             <li *ngFor="let item of arreglo | slice:5:10">{{ item }}</li>
         </ul>
 
-        <h3>JSON</h3>
-        <hr>
-        <div class="row mb-5">
-            <div class="col">
-                <pre>
-                    {{ heroe | json }}
-                </pre>
+        <div class="mt-4">
+            <h3>JSON</h3>
+            <hr>
+            <div class="row mb-5">
+                <div class="col">
+                    <pre>
+                        {{ heroe | json }}
+                    </pre>
+                </div>
+            </div>
+
+            <h3>slice:5:10</h3>
+            <hr>
+            <ul>
+                <li *ngFor="let item of arreglo | slice:5:10">{{ item }}</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h3>DOMseguro</h3>
+            <hr>
+            <div class="row mb-5">
+                <div class="col">
+                    <iframe
+                        width="560"
+                        height="315"
+                        [src]="videoUrl | domseguro"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
+
+                </div>
             </div>
         </div>
     </div>
